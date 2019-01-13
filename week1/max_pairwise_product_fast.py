@@ -8,7 +8,7 @@ def max_pairwise_product(numbers):
         if numbers[i] > numbers[index_1]:
             index_1 = i
     
-    print('final index_1: i = {}, value = {}'.format(index_1,numbers[index_1]))
+    #print('final index_1: i = {}, value = {}'.format(index_1,numbers[index_1]))
     
     if index_1 == 0:
         index_2 = 1
@@ -19,7 +19,7 @@ def max_pairwise_product(numbers):
         if (numbers[i] != numbers[index_1]) and (numbers[i] > numbers[index_2]):
             index_2 = i
             
-    print('final index_2: i = {}, value = {}'.format(index_2,numbers[index_2]))
+    #print('final index_2: i = {}, value = {}'.format(index_2,numbers[index_2]))
 
 
     return numbers[index_1]*numbers[index_2]
